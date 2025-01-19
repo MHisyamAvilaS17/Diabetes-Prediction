@@ -6,7 +6,7 @@ import pickle
 
 @st.cache_resource
 def load_best_model():
-    return load_model('best_model.h5')
+    return load_model('best_model_wide_deep.h5')
 
 @st.cache_resource
 def load_scaler():
