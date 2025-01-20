@@ -3,6 +3,8 @@ import numpy as np
 import pandas as pd
 from tensorflow.keras.models import load_model
 import pickle
+from joblib import load
+
 
 @st.cache_resource
 def load_best_model():
@@ -10,8 +12,7 @@ def load_best_model():
 
 @st.cache_resource
 def load_scaler():
-    with open('scaler.pkl', 'rb') as f:
-        return pickle.load(f)
+    scaler = load('scaler.joblib')
 
 def predict_diabetes(data, model, scaler):
     """
