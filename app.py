@@ -2,8 +2,6 @@ import streamlit as st
 import numpy as np
 import pandas as pd
 from tensorflow.keras.models import load_model
-import pickle
-from joblib import load
 
 
 @st.cache_resource
