@@ -1,0 +1,8 @@
+from sklearn.preprocessing import StandardScaler
+from joblib import dump
+
+scaler = StandardScaler()
+scaler.fit(X_train)
+
+dump(scaler, 'Scaler.pkl')
+print("Scaler berhasil disimpan.")
