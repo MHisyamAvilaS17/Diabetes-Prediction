@@ -5,3 +5,5 @@ pandas==2.2.3
 scikit-learn==1.6.1
 joblib==1.4.2
 protobuf==3.20.3
+altair>=4.2.0
+
