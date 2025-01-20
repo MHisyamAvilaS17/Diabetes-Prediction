@@ -1,0 +1,4 @@
+from joblib import dump, load
+dump(scaler, 'scaler.pkl') 
+scaler = load('scaler.pkl') 
+
