@@ -8,7 +8,7 @@ from joblib import load
 
 @st.cache_resource
 def load_best_model():
-    return load('best_model_wide_deep.h5')
+    return load_model('best_model_wide_deep.h5')
 
 @st.cache_resource
 def load_scaler():
