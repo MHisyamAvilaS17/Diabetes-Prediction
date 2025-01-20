@@ -11,7 +11,7 @@ def load_best_model():
 
 @st.cache_resource
 def load_scaler():
-    scaler = load('scaler.joblib')
+    scaler = load('Diabetes.pkl')
 
 def predict_diabetes(data, model, scaler):
     """
