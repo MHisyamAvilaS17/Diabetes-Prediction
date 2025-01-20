@@ -1,9 +1,7 @@
 streamlit==1.14.0
 tensorflow==2.18.0
-numpy==1.26.0
-pandas==2.2.3
-scikit-learn==1.6.1
-joblib==1.4.2
+altair<5.0,>=4.2.2
 protobuf==3.20.3
-altair>=4.2.0
-
+numpy>=1.26.0,<2.1.0
+pandas
+scikit-learn
