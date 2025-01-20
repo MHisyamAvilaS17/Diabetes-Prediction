@@ -1,11 +1,10 @@
+from joblib import dump, load
 from sklearn.preprocessing import StandardScaler
-import pickle
 
-# Data training Anda (X_train) harus sudah tersedia
+# Buat scaler dan fit dengan data training
 scaler = StandardScaler()
-scaler.fit(X_train)
+scaler.fit(X_train)  # X_train adalah data training Anda
 
-# Simpan scaler
-with open('scaler.pkl', 'wb') as f:
-    pickle.dump(scaler, f)
-print("Scaler berhasil disimpan sebagai scaler.pkl")
+# Simpan scaler ke file
+dump(scaler, 'scaler.joblib')
+print("Scaler berhasil disimpan sebagai scaler.joblib")
